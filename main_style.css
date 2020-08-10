@@ -12,6 +12,10 @@ img{
 	padding: 50px;
 }
 
+.identation{
+	text-indent: 40px;
+}
+
 .inicial{
 	text-align: center;
 	font-family: sans-serif;
