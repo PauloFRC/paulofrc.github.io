@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>PAINTA ACADEMY - Formulário de inscrição</title>
+	<link rel="stylesheet" type="text/css" href="formulario_style.css">
+</head>
+<body>
+
+	<script>
+    function LoadFile(event){
+    	let PerfilFile = new FileReader();
+    	PerfilFile.onload = function() {
+        let cadastro = document.getElementById('mediano');
+        cadastro.src = PerfilFile.result;
+      };
+      PerfilFile.readAsDataURL(event.target.files[0]);
+    };
+ 	</script>
+
+
+	<div class="header">
+		<div class="header-content">
+			<img src="paint.png" id="paint">
+			<h1 id="bigger-header-text">PAINT ACADEMY</h1>
+			<p id="smaller-header-text">O futuro em design gráfico</p>
+		</div>
+	</div>
+
+	<div class="caixa-formulario">
+		<p class="title">Crie sua conta</p>
+		<img src="rapaz_formulario.png" id="formulario-desenho">
+
+		<form onsubmit="retornar();return false">
+			<label for="nome">Nome:</label><br/>
+			<input type="text" name="nome" id="nome" placeholder="Seu nome" required> <br/>
+
+			<label for="idade">Idade:</label> <br/>
+			<input type="number" name="idade" id="idade" placeholder="Sua idade" required> <br/>
+
+			<label for="cartao">Número do cartão de crédito:</label> <br/>
+			<input type="number" name="cartao" id="cartao" placeholder="Cartão de crédito" required> <br/>
+
+			<label for="email">Email:</label> <br/>
+			<input type="text" name="email" id="email" placeholder="Seu email" required> <br/>
+
+			<label for="cpf">CPF:</label> <br/>
+			<input type="number" name="cpf" id="cpf" placeholder="Seu CPF" required> <br/>
+
+			<label for="cor">Cor preferida:</label> <br/>
+			<input type="color" name="cor" id="cor" placeholder="Sua cor favorita" required> <br/>
+
+			<label for="experiencia">Nível em design gráfico:</label> <br/>
+			<select name="experiencia" id="experiencia" required>
+				<option value="Iniciante">Iniciante</option>
+				<option value="Amador">Amador</option>
+				<option value="Experiente">Experiente</option>
+			</select> <br/>
+
+			<img src="foto_cadastro.png" id="mediano">
+			<input type="file" name="perfil" accept="image/*" id="perfil" onchange="LoadFile(event)">
+			<label for="perfil" id="label-perfil">Envie uma foto sua</label> <br/><br/>
+
+			<label for="razao">Explique a razão de querer fazer o curso:</label> <br/>
+			<textarea id="razao" name="razao" rows="6" cols="30" minlength="15" required></textarea> <br/>
+
+			<br/>
+			<input type="submit" name="" class="input">
+		</form>
+
+		<script type="text/javascript">
+			function retornar(){
+				var nome = document.getElementById("nome").value;
+				console.log(nome);
+				var idade = parseInt(document.getElementById("idade").value);
+				console.log(idade);
+				var cartao = parseInt(document.getElementById("cartao").value);
+				console.log(cartao);
+				var email = document.getElementById("email").value;
+				console.log(email);
+				var cpf = parseInt(document.getElementById("cpf").value);
+				console.log(cpf);
+				var cor = document.getElementById("cor").value;
+				console.log(cor);
+				var experiencia = document.getElementById("experiencia").value;
+				console.log(experiencia)
+				var razao = document.getElementById("razao").value;
+				console.log(razao);
+				var perfil = document.getElementById("perfil").value;
+				console.log(perfil)
+				alert("Obrigado por se inscrever no curso Paint Academy, as informações do formulário estão no console")
+
+
+			}
+		</script>
+
+	</div>
+
+	<div class="footer">
+	<p>© 2020-2020 Paint Academy, Inc. Legal & Privacy Site Map</p>
+	<p class="lerolero">Não obstante, o surgimento do comércio virtual acarreta um processo de reformulação e modernização das regras de conduta normativas.</p>
+	<p class="lerolero">Percebemos, cada vez mais, que a constante divulgação das informações agrega valor ao estabelecimento das posturas dos órgãos dirigentes com relação às suas atribuições.Por outro lado, a percepção das dificuldades nos obriga à análise das formas de ação.Podemos já vislumbrar o modo pelo qual a expansão dos mercados mundiais talvez venha a ressaltar a relatividade da gestão inovadora da qual fazemos parte.</p>
+	</div>
+
+
+</body>
+
+</html>

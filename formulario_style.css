@@ -1,0 +1,186 @@
+body{
+	font-family: Arial;
+	margin: 0;
+	background-color: #f7f7f7;
+}
+
+form{
+	text-align: justify;
+	margin: 15px;
+	margin-left: 300px;
+	margin-right: 310px;
+}
+
+input[type=text], select{
+  	width: 100%;
+  	padding: 12px 20px;
+  	margin: 8px 0;
+  	display: inline-block;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+}
+
+input[type=number], select{
+  	width: 100%;
+  	padding: 12px 20px;
+  	margin: 8px 0;
+  	display: inline-block;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+}
+
+input[type=color], select{
+  	width: 100%;
+  	height: 60px;
+  	padding: 12px 20px;
+  	margin: 8px 0;
+  	display: inline-block;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+}
+
+input[type=textarea], select{
+  	width: 100%;
+  	height: 60px;
+  	padding: 12px 20px;
+  	margin: 8px 0;
+  	display: inline-block;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #1abc9c;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Arial Black;
+}
+
+input[type=file]{
+	display: none;
+}
+
+textarea{
+	width: 100%;
+	padding: 12px 20px;
+  	margin: 8px 0;
+  	display: inline-block;
+  	border: 1px solid #ccc;
+  	border-radius: 4px;
+  	box-sizing: border-box;
+}
+
+.header{
+	padding: 25px;
+  	text-align: left;
+  	background: #1abc9c;
+  	color: black;
+  	font-size: 20px;
+}
+
+.title{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 35px;
+	margin-bottom: 10px;
+	margin-top: 17px;
+}
+
+.caixa-formulario{
+	background-color: white;
+	margin-left: 250px;
+	margin-right: 250px;
+	border-radius: 30px;
+	box-shadow: rgba(30,50,26,0.15) 0px 0px 15px;
+	padding: 2px;
+	margin-top: 30px
+}
+
+.footer{
+	 background: #1abc9c;
+	 width: 100%;
+	 height: 100px;
+	 position: relative;
+	 bottom: 0;
+	 left: 0;
+	 min-height: 100%;
+	 color: white;
+	 padding-top: 10px;
+	 padding-bottom: 20px;
+	 margin-top: 50px;
+
+}
+
+.lerolero{
+	text-align: center;
+	font-size: 12px;
+	padding-right: 0px;
+}
+
+
+#paint {
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin-top: -15px;
+}
+
+#bigger-header-text{
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#smaller-header-text{
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+
+#formulario-desenho{
+	width: 8%;
+	height: 8%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mediano{
+	width: 40%;
+	height: 155px;
+	background-color: #1abc9c;
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+
+#label-perfil{
+	display: block;
+	text-align: center;
+ 	background-color: white;
+  	border-radius: 30px;
+  	margin-left: 30px;
+  	margin-right: 30px;
+  	color: #fff;
+  	cursor: pointer;
+  	padding: 10px;
+  	border-style: solid;
+  	border-color: #1abc9c;
+  	color: black;
+  	font-family: Arial Black;
+
+
+}
+
+#razao{
+	resize: none;
+}
